@@ -8,7 +8,7 @@ public class MyHashtable implements Iterable {
 	private static final int INITIAL_SIZE;
 	private static final int DEFAULT_LOAD_FACTOR = 5;
 	static {
-		INITIAL_SIZE=20;
+		INITIAL_SIZE=3;
 	}
 	private int tableSize;
 	private int numEntries;
@@ -43,6 +43,7 @@ public class MyHashtable implements Iterable {
 	}
 	
 	public void put(Object key, Object value){
+		if(loadFactor()>maxLoadFactor) rehash();
 		if(key==null) return;
 		int hashcode = key.hashCode();
 		int hash = hash(hashcode);
@@ -63,7 +64,7 @@ public class MyHashtable implements Iterable {
 			++numEntries;
 			
 			//if(tableSize *  maxLoadFactor <= numEntries) rehash();
-			if(loadFactor()>maxLoadFactor) rehash();
+			
 		}
 	}
 	/** returns iterator for the keys only */
