@@ -37,7 +37,28 @@ public class Main {
 		
 		return tempList;
 	}
+	/*
+	 private LinkedList<Integer> list3 = new LinkedList<>();
 	
+	public LinkedList<Integer> merge(LinkedList<Integer> list1, LinkedList<Integer> list2) {
+		if (list1.size() == 0 && list2.size() == 0) {
+			return list3;
+		} else if (list1.size() == 0 && list2.size() > 0) {
+			list3.addLast(list2.pop());
+		} else if (list2.size() == 0 && list1.size() > 0) {
+			list3.addLast(list1.pop());
+		} else {
+		
+			if (list1.peek() < list2.peek()) {
+				list3.addLast(list1.pop());
+			} else {
+				list3.addLast(list2.pop());
+			}
+		}
+		
+		return merge(list1, list2);
+	}
+   */
 	public static void main(String[] args) {
 		
 		LinkedList<Integer> list1 = new LinkedList<>();
