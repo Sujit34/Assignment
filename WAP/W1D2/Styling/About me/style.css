@@ -1,0 +1,40 @@
+body {
+    background-color: #595647;
+    padding: 20px;
+    height:100vh;
+  }
+  h1 {
+    color: blue;
+  }
+
+  h3{
+      color: #FFFFFF;
+  }
+  p#first {
+    color: rgb(255, 145, 0);
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height:1.5em ;
+  }
+
+  div> h2.firstClass{
+      color: #AAC1EA;
+  }
+
+  div> ul{
+    color: #FFFFFF;
+}
+
+div> ul> li {
+    font-size: 20px;
+
+}
+  
+div> ol> li{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+div.endpart{
+  float: right;
+}
