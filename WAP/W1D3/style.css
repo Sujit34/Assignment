@@ -1,0 +1,75 @@
+@media screen and(min-width: 600px) {
+    #grid-container{
+        display : grid;
+        background-color: blueviolet;
+        height: 600px;
+        grid-template-areas: 
+        'h'
+        'mc'
+        'f';
+    }
+}
+#grid-container{
+    display : grid;
+    background-color: blueviolet;
+    height: 600px;
+    grid-template-areas: 
+    'h'
+    'mc'
+    'f';
+}
+#grid-header{
+    grid-area: h;
+    background-color: rgb(13, 238, 238);   
+    text-align: center;
+    height: 100px;
+}
+#grid-menu-column{
+    grid-area: mc;
+    display: flex;
+    flex-direction: column;    
+    height: 450px;
+}
+#grid-footer{
+    grid-area: f;
+    background-color: darkcyan;
+    text-align: center;
+    height: 50px;
+}
+#grid-menu{
+    display:flex;
+    flex-direction: row;
+    background-color: darkcyan;
+    height: 50px;
+    
+}
+#grid-column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    height: 400px;
+}
+#grid-menu>div{   
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    border: 1px solid #000;    
+}
+#column1{
+    width: 30%;   
+    background-color: rgb(112, 108, 108);
+    padding-left: 3.33%;
+    padding-top: 2%;
+}
+#column2{
+    width: 30%; 
+    background-color: rgb(175, 170, 170);
+    padding-left: 3.33%;
+    padding-top: 2%;
+}
+#column3{
+    width: 30%;   
+    background-color: rgb(117, 95, 95);
+    padding-left: 3.33%;
+    padding-top: 2%;
+}
