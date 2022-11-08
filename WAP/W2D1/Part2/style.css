@@ -1,0 +1,62 @@
+#grid-content{
+    display: grid;
+    width: 100%;
+    grid-template-areas:     
+    'e'
+    'et'
+    'p'
+    'pt'
+    'w'
+    'wt';
+    
+}
+
+#email{
+    grid-area: 'e';
+    width: 100%;
+    height: 20px;
+    margin: 5px;
+}
+#email-text{
+    grid-area: 'et';
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
+
+#password{
+    grid-area: 'p';
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
+#password-text{
+    grid-area: 'pt';
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
+
+#website{
+    grid-area: 'w';
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
+#website-name-text{
+    grid-area: 'wt';
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
+
+#form{
+    margin: 10px;
+    border : 10px;
+    padding: 50px;
+}
+#button{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
