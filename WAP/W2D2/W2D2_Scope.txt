@@ -1,0 +1,32 @@
+1. 8
+   8
+   9
+   10
+   1
+   
+2. 
+Global scope: Variables declared outside of any function become global variables.Global variables can be accessed and
+modified from any function.Changing value of global variable in any function will reflect throughout the program.
+variables declared inside a function without var keyword also become global variables.
+
+
+Local Scope: Variables declared inside any function with var keyword are called local variables. 
+Local variables cannot be accessed or modified outside the function declaration.
+
+3.
+
+var a3 = 10;
+function xFunc() {
+    var b3 = 12;
+    console.log("a3: " + a3);
+    function yFunc() {
+        var c3 = 14;
+        console.log("b3: " + b3);
+    }
+}
+xFunc();
+
+4. 81
+   25
+
+5. 10
