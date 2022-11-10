@@ -32,3 +32,54 @@ console.log(add5());
 var add7 = make_adder(7);
 add7();add7();
 console.log(add7());
+
+
+4. 
+By writing (function(){......})() in the Javascript code that is module pattern can remove all the names from the Global namespaces.
+
+
+5.
+const Employee= (function(){
+    let name= "Sujit Kumar Chanda";
+    let age= 30;
+    let salary= 100000;
+
+    const getName = function(){
+        return name
+    }
+    const getAge = function(){
+        return age;
+    }
+
+    const getSalary = function(){
+        return salary;
+    }
+
+    
+    return{      
+        setName:function(name){
+	  name = name;
+	},
+        setAge:function(age){
+	  age = age;
+	},
+        setSalary:function(salary){
+	  salary = salary;
+	},
+        increaseSalary: function(percentage){
+	  return getSalary() + (getSalary()  * percentage)/100 ;
+	},
+        incrementAge : function(age){
+	 return getAge() + age;
+	}
+    };
+})();
+
+6.
+
+Employee.entensions = functions(){
+	let address = '1000N 4th Street';
+	const getAddress = function(address){return address},
+	const setAddress = function(address){address = address}	
+};
+ 

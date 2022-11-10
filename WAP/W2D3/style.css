@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding:2%;
+}
+input{
+    width: 10%;
+    margin-right: 2%;
+}
+
+#circle{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    border-radius: 25px;
+}
