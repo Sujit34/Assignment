@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inheritance</title>
+    <meta charset="utf-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>      
+      mocha.setup("bdd");      
+      let assert = chai.assert;
+    </script>
+
+    <script src="jsFunction.js"></script>
+    <script src="test.js"></script>
+  </head>
+
+  <body>
+    <div id="mocha"></div>
+    <div>
+      <h2><pre>      Teacher Inheritance</pre></h2>
+      <p>
+        <code>
+          <pre>
+            function Person() {}
+            Person.prototype.initialize = function (name, age) {
+                this.name = name;
+                this.age = age;
+            };
+            Person.prototype.describe = function () {
+                return this.name + ", " + this.age + " years old.";
+            };
+            
+            function Teacher() {}
+            Teacher.prototype = new Person();
+            
+            Teacher.prototype.teach = function (subject) {
+                return this.name + " is now teaching " + subject;
+            };
+            let teacher = new Teacher();
+            teacher.initialize("John", 30);
+            console.log(teacher.teach("JavaScript"));
+        </pre
+          >
+        </code>
+      </p>
+    </div>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
