@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cart</title>
+    <link href="/stylesheets/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h2>Shopping Cart</h2>
+    <div id="cart">    
+        <%cart.forEach((x)=>{%>
+          <form>
+            <h3><%=x.name%></h3>
+            <p><%=x.toString()%></p>
+            <input name="name" type="hidden" value="<%=x.id%>" />
+            <input type="submit" value="Remove" />
+          </form>
+        <%});%>
+      </div>     
+  </body>
+</html>
