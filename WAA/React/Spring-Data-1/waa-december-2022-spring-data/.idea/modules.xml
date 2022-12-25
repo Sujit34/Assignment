@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-data-1-Assignment/spring-data-1-Assignment.iml" filepath="$PROJECT_DIR$/spring-data-1-Assignment/spring-data-1-Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/waa-december-2022-spring-data.iml" filepath="$PROJECT_DIR$/.idea/waa-december-2022-spring-data.iml" />
+    </modules>
+  </component>
+</project>
