@@ -1,0 +1,13 @@
+app:
+  applicationName: ConfigurationPractice
+  version: 1.0
+  serverUrl: http://miu.edu
+  serverName: citrix
+  firstName: Sujit Kumar
+  lastName: Chanda
+  userName: sujit
+  password: miu123
+  countries:
+    - USA
+    - Bangladesh
+    - India

@@ -1,0 +1,3 @@
+When we use lazy loading inside @Transactional annotation, the entity that is fetched from database is in managed state in persistant context which has the access to same entity manager.
+So it can fetch data lazily using the same entity manager.  When we didn't use transaction we had to use eager loading because the Account entity will be detachd from persistant context
+when it return to service layer. But in case of lazy loading with transaction entity is still managed in service layer.

@@ -1,0 +1,30 @@
+First you need to create the tables in the database:
+
+CREATE TABLE customer (
+  customerNumber  INTEGER PRIMARY KEY,
+  name VARCHAR(50),
+  email VARCHAR(50),
+   phone VARCHAR(50)
+);
+
+CREATE TABLE creditcard (
+  cardNumber  VARCHAR(50) PRIMARY KEY,
+  type VARCHAR(50),
+  validationDate VARCHAR(50),
+  customernumber INTEGER
+);
+
+CREATE TABLE product (
+    productnumber INTEGER PRIMARY KEY,
+    name varchar(100) ,
+    price String
+) ;
+
+
+create table supplier (
+    id INTEGER PRIMARY KEY,
+    name varchar(100) ,
+    phone varchar(100),
+    productnumber INTEGER
+) ;
+
